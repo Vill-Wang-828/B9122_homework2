@@ -4,9 +4,13 @@ import urllib.request
 
 seed_url = "https://www8.gsb.columbia.edu"
 
+" this is the change i made to test 'commit' function"
+seed_url2 = "https://fred.stlouisfed.org/"  
+
 urls = [seed_url]    #queue of urls to crawl
 seen = [seed_url]    #stack of urls seen so far
 opened = []          #we keep track of seen urls so that we don't revisit them
+
 
 maxNumUrl = 10; #set the maximum number of urls to visit
 print("Starting with url="+str(urls))
